@@ -1,0 +1,573 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Baltazar\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-28 15:17+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-5.0.3"
+
+#: includes/loops/loop-blog-grid.php:6 includes/loops/loop-top-blog.php:4
+#: includes/loops/loop-top-blog.php:28
+msgid " "
+msgstr ""
+
+#: includes/loops/loop-blog-grid.php:22 includes/loops/loop-blog.php:13
+#: includes/loops/loop-blog.php:16
+msgid " min"
+msgstr ""
+
+#: includes/post-formats/format-link.php:12
+msgid "&#8226;"
+msgstr ""
+
+#: includes/wp-pagenavi.php:78
+msgid "&laquo;"
+msgstr ""
+
+#: includes/wp-pagenavi.php:64
+msgid "&laquo; First"
+msgstr ""
+
+#: includes/wp-pagenavi.php:88
+msgid "&raquo;"
+msgstr ""
+
+#: includes/widgets/popular_post_widget.php:93
+#: includes/widgets/post_slider_widget.php:121
+#: includes/widgets/post_widget.php:147
+#: includes/widgets/recent_post_widget.php:92
+msgid "(at most 10)"
+msgstr ""
+
+#: includes/widgets/post_slider_widget.php:134
+msgid "(at most 4 for fullwidth slider and 2 for smaller slider)"
+msgstr ""
+
+#: includes/widgets/video_widget.php:136
+msgid "(Bottom margin for text with px (200px))"
+msgstr ""
+
+#: comments.php:19
+msgid "(Edit)"
+msgstr ""
+
+#: includes/widgets/video_widget.php:126
+msgid "(Link for the text)"
+msgstr ""
+
+#: includes/widgets/post_slider_widget.php:147
+#: includes/widgets/post_widget.php:168
+msgid "(select category to display)"
+msgstr ""
+
+#: includes/widgets/video_widget.php:131
+msgid "(Text over the video)"
+msgstr ""
+
+#: includes/widgets/video_widget.php:104
+msgid "(Youtube or Vimeo or self hosted)"
+msgstr ""
+
+#: functions.php:451
+msgid "Archive"
+msgstr ""
+
+#: includes/widgets/video_widget.php:117
+msgid "Auto play (only for self hosted video)?"
+msgstr ""
+
+#. Name of the theme
+msgid "Baltazar"
+msgstr ""
+
+#: includes/widgets/popular_post_widget.php:15
+msgid "Baltazar - Premium Popular Posts"
+msgstr ""
+
+#: includes/widgets/post_widget.php:15
+msgid "Baltazar - Premium Posts"
+msgstr ""
+
+#: includes/widgets/post_slider_widget.php:16
+msgid "Baltazar - Premium Posts with slider"
+msgstr ""
+
+#: includes/widgets/recent_post_widget.php:15
+msgid "Baltazar - Premium Recent Posts"
+msgstr ""
+
+#: includes/widgets/social_widget.php:15
+msgid "Baltazar - Premium Social Widget"
+msgstr ""
+
+#: includes/widgets/video_widget.php:15
+msgid "Baltazar - Premium Video"
+msgstr ""
+
+#. Description of the theme
+msgid "Baltazar - Premium WordPress Blog Theme"
+msgstr ""
+
+#: category-default.php:5 category-grid.php:5
+msgid "Browsing Category"
+msgstr ""
+
+#: category-default.php:5
+msgid "Browsing Tag"
+msgstr ""
+
+#: includes/loops/loop-top-blog.php:15 includes/loops/loop-top-blog.php:39
+msgid "by "
+msgstr ""
+
+#: comments.php:39
+msgid "Cancel Reply"
+msgstr ""
+
+#: includes/widgets/post_slider_widget.php:137
+#: includes/widgets/post_widget.php:158
+msgid "Category to display"
+msgstr ""
+
+#: functions.php:723
+msgid "Check out the recipe"
+msgstr ""
+
+#: comments.php:46
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:977
+msgid "Contact Form 7"
+msgstr ""
+
+#: functions.php:720 includes/loops/loop-blog-grid.php:27
+#: includes/loops/loop-blog.php:8
+msgid "Continue reading"
+msgstr ""
+
+#: includes/loops/loop-blog.php:16
+msgid "Cooking time: "
+msgstr ""
+
+#: includes/widgets/post_widget.php:172
+msgid "Display more then one post"
+msgstr ""
+
+#: includes/widgets/video_widget.php:121
+msgid "Display Text with link?"
+msgstr ""
+
+#: includes/widgets/post_widget.php:13
+msgid "Displays the post image and excerpt from a selected category"
+msgstr ""
+
+#: includes/widgets/popular_post_widget.php:13
+msgid "Displays the post image and excerpt from a selected category."
+msgstr ""
+
+#: includes/widgets/recent_post_widget.php:13
+#: includes/widgets/social_widget.php:13 includes/widgets/video_widget.php:13
+msgid "Displays the post image and title."
+msgstr ""
+
+#: includes/widgets/post_slider_widget.php:14
+msgid "Displays the post in slider from a selected category"
+msgstr ""
+
+#: functions.php:147
+msgid "Footer sidebar 1"
+msgstr ""
+
+#: functions.php:157
+msgid "Footer sidebar 2"
+msgstr ""
+
+#: functions.php:168
+msgid "Footer sidebar 3"
+msgstr ""
+
+#: functions.php:454 functions.php:537
+msgid "Home"
+msgstr ""
+
+#. URI of the theme
+msgid "http://baltazar.premiumcoding.com/"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://premiumcoding.com"
+msgstr ""
+
+#: includes/widgets/video_widget.php:111
+msgid "Image cover for self hosted video:"
+msgstr ""
+
+#: functions.php:987
+msgid "Instagram Feed"
+msgstr ""
+
+#: includes/wp-pagenavi.php:101
+msgid "Last &raquo;"
+msgstr ""
+
+#: comments.php:41
+msgid "Leave a Comment"
+msgstr ""
+
+#: comments.php:40
+msgid "Leave a Reply to"
+msgstr ""
+
+#: includes/widgets/video_widget.php:124
+msgid "Link URL:"
+msgstr ""
+
+#: category-grid.php:29
+msgid "Load more posts"
+msgstr ""
+
+#: comments.php:96
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a title=\"Log out of this account\" "
+"href=\"%3$s\">Log out?</a>\n"
+msgstr ""
+
+#: comments.php:44
+msgid "Mail"
+msgstr ""
+
+#: functions.php:982
+msgid "MailPoet Newsletters"
+msgstr ""
+
+#: functions.php:23
+msgid "Main Menu"
+msgstr ""
+
+#: functions.php:992
+msgid "Mega Menu"
+msgstr ""
+
+#: comments.php:45
+msgid "Name"
+msgstr ""
+
+#: single.php:121
+msgid "Next post"
+msgstr ""
+
+#: functions.php:741
+msgid "Not yet rated"
+msgstr ""
+
+#: includes/widgets/post_slider_widget.php:150
+#: includes/widgets/post_widget.php:175
+msgid "Note: Quote post will not be displayed."
+msgstr ""
+
+#: search.php:9
+msgid "Nothing found for this search term!"
+msgstr ""
+
+#: includes/widgets/post_slider_widget.php:132
+msgid "Number of posts to show in slider:"
+msgstr ""
+
+#: includes/widgets/popular_post_widget.php:91
+#: includes/widgets/post_slider_widget.php:119
+#: includes/widgets/post_widget.php:145
+#: includes/widgets/recent_post_widget.php:90
+msgid "Number of posts to show:"
+msgstr ""
+
+#: includes/widgets/post_slider_widget.php:128
+#: includes/widgets/post_widget.php:154
+msgid "Number of words to show in excpert:"
+msgstr ""
+
+#: includes/wp-pagenavi.php:54
+msgid "Page %CURRENT_PAGE% of %TOTAL_PAGES%"
+msgstr ""
+
+#. Name of the template
+msgid "Page fullwidth"
+msgstr ""
+
+#. Name of the template
+msgid "Page with sidebar"
+msgstr ""
+
+#: includes/loops/loop-blog-grid.php:7 includes/loops/loop-related.php:51
+#: includes/loops/loop-related.php:53 includes/post-formats/format-link.php:13
+#: includes/post-formats/format-link.php:23
+#: includes/widgets/popular_post_widget.php:55
+#: includes/widgets/popular_post_widget.php:59
+#: includes/widgets/post_slider_widget.php:76
+#: includes/widgets/post_slider_widget.php:80
+#: includes/widgets/post_widget.php:85 includes/widgets/post_widget.php:103
+#: includes/widgets/post_widget.php:107
+#: includes/widgets/recent_post_widget.php:53
+#: includes/widgets/recent_post_widget.php:57
+#: includes/widgets/video_widget.php:46
+msgid "Permanent Link to"
+msgstr ""
+
+#: includes/loops/loop-blog-grid.php:27 includes/loops/loop-top-blog.php:5
+msgid "Permanent Link to "
+msgstr ""
+
+#: category-grid.php:15
+msgid "Popular posts"
+msgstr ""
+
+#: includes/widgets/post_widget.php:171
+msgid "Post to display"
+msgstr ""
+
+#. Author of the theme
+msgid "premiumcoding"
+msgstr ""
+
+#: single.php:120
+msgid "Previous post"
+msgstr ""
+
+#: includes/loops/loop-blog-grid.php:22 includes/loops/loop-blog.php:13
+msgid "Reading time: "
+msgstr ""
+
+#: category-grid.php:14
+msgid "Recent posts"
+msgstr ""
+
+#: includes/loops/loop-top-blog.php:20 includes/loops/loop-top-blog.php:44
+msgid "Recipe rating: "
+msgstr ""
+
+#: includes/loops/loop-related.php:33
+msgid "Related Posts"
+msgstr ""
+
+#: comments.php:43
+msgid "required"
+msgstr ""
+
+#: functions.php:24
+msgid "Responsive Menu"
+msgstr ""
+
+#: functions.php:948
+msgid "Revolution Slider"
+msgstr ""
+
+#: functions.php:25
+msgid "Scroll Menu"
+msgstr ""
+
+#: functions.php:563 functions.php:570
+msgid "Search and hit enter..."
+msgstr ""
+
+#: functions.php:443
+msgid "Search results for "
+msgstr ""
+
+#: includes/widgets/video_widget.php:108
+msgid ""
+"Self hosted video (formats : \"mp4\", \"m4v\", \"webm\", \"ogv\", \"wmv\", "
+"\"flv\")?"
+msgstr ""
+
+#: functions.php:482
+msgid "Share: "
+msgstr ""
+
+#: functions.php:972
+msgid "Shortcode Ultimate"
+msgstr ""
+
+#: includes/widgets/post_slider_widget.php:125
+#: includes/widgets/post_widget.php:151
+msgid "Show excpert?"
+msgstr ""
+
+#: functions.php:114
+msgid "Sidebar above footer full width"
+msgstr ""
+
+#: functions.php:124
+msgid "Sidebar above footer left"
+msgstr ""
+
+#: functions.php:134
+msgid "Sidebar above footer right"
+msgstr ""
+
+#: functions.php:73
+msgid "Sidebar for advert in logo area"
+msgstr ""
+
+#: functions.php:42
+msgid "Sidebar for single blog posts"
+msgstr ""
+
+#: functions.php:32
+msgid "Sidebar main"
+msgstr ""
+
+#: functions.php:103
+msgid "Sidebar under header full width"
+msgstr ""
+
+#: functions.php:83
+msgid "Sidebar under header left"
+msgstr ""
+
+#: functions.php:93
+msgid "Sidebar under header right"
+msgstr ""
+
+#: functions.php:998
+msgid "Sticky Sidebar"
+msgstr ""
+
+#: includes/widgets/video_widget.php:134
+msgid "Text bottom margin:"
+msgstr ""
+
+#: includes/widgets/video_widget.php:129
+msgid "Text:"
+msgstr ""
+
+#: functions.php:959
+msgid "Theme Options PMC"
+msgstr ""
+
+#: functions.php:33
+msgid ""
+"This is main sidebar used in category, single post view and all pages with "
+"sidebar"
+msgstr ""
+
+#: comments.php:3
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: functions.php:43
+msgid ""
+"This sidebar is for single blog posts. You can disable this options via "
+"Theme Options"
+msgstr ""
+
+#: functions.php:115
+msgid "This sidebar is located above footer and it is fullwidth."
+msgstr ""
+
+#: functions.php:125
+msgid "This sidebar is located above footer on the left side."
+msgstr ""
+
+#: functions.php:135
+msgid "This sidebar is located above footer on the right side."
+msgstr ""
+
+#: functions.php:54
+msgid "This sidebar is located above header section and it on the left side."
+msgstr ""
+
+#: functions.php:64
+msgid "This sidebar is located above header section and it on the right side."
+msgstr ""
+
+#: functions.php:148
+msgid "This sidebar is located inside footer as first sidebar."
+msgstr ""
+
+#: functions.php:158
+msgid "This sidebar is located inside footer as second sidebar."
+msgstr ""
+
+#: functions.php:169
+msgid "This sidebar is located inside footer as third sidebar."
+msgstr ""
+
+#: functions.php:74
+msgid "This sidebar is located inside the header on the right side of logo."
+msgstr ""
+
+#: functions.php:104
+msgid "This sidebar is located just after header and it is fullwidth."
+msgstr ""
+
+#: functions.php:84
+msgid "This sidebar is located just after header section on the left side."
+msgstr ""
+
+#: functions.php:94
+msgid "This sidebar is located just after header section on the right side."
+msgstr ""
+
+#: includes/widgets/popular_post_widget.php:86
+#: includes/widgets/post_slider_widget.php:114
+#: includes/widgets/post_widget.php:140
+#: includes/widgets/recent_post_widget.php:85
+#: includes/widgets/social_widget.php:44 includes/widgets/video_widget.php:97
+msgid "Title:"
+msgstr ""
+
+#: functions.php:53
+msgid "Top sidebar left"
+msgstr ""
+
+#: functions.php:63
+msgid "Top sidebar right"
+msgstr ""
+
+#: search.php:15
+msgid "Try again"
+msgstr ""
+
+#: includes/widgets/video_widget.php:113
+msgid "Upload Image"
+msgstr ""
+
+#: includes/widgets/video_widget.php:102
+msgid "Video URL:"
+msgstr ""
+
+#: comments.php:42
+msgid "Website"
+msgstr ""
+
+#: single.php:103
+msgid "Written by "
+msgstr ""
+
+#: includes/loops/loop-blog.php:29
+msgid "Written by: "
+msgstr ""
+
+#: includes/widgets/social_widget.php:49
+msgid "You can put social icons via Theme options."
+msgstr ""
+
+#: functions.php:50
+msgid ""
+"You have set SHOW CRYPTO SLIDER IN TOP BAR TO ON: Because of this, you can "
+"not use this sidebar!"
+msgstr ""
+
+#: comments.php:28
+msgid "Your comment is awaiting moderation."
+msgstr ""

@@ -1,0 +1,16 @@
+/*
+Theme Name: Baltazar Lite Child
+Description: Simple child theme for Baltazar to allow for extra functionality and security enhancements
+Version: 1.1
+Author: R. Jones
+Author URI: https://nothingatall.net;
+Template: baltazar-lite
+*/
+
+
+
+.pagenav {
+    background: #A4743C;
+    border-top: 0px solid #000;
+    border-bottom: 0px solid #000;
+}
