@@ -22,6 +22,11 @@
 		<div class="content  singlepage">
 			<div class="postcontent">
 				<div class="posttext">
+<?php
+	if(function_exists('yoast_breadcrumb')) {
+		yoast_breadcrumb('<p id="breadcrumbs" style="margin: 0 0;">','</p>');
+	}
+?>
 					<h1><?php the_title(); ?></h1>
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 						<div class="usercontent"><?php the_content(); ?></div>
