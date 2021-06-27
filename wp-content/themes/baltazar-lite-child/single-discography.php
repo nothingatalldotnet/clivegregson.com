@@ -31,6 +31,7 @@
 	echo '<div style="float:left;">';
 	the_content();
 	echo '</div>';
+	echo '<br style="clear:both;">';
 
 	if(have_rows('tracklisting')) {
 		echo '<h2>Tracklisting</h2>';
