@@ -9,6 +9,7 @@
 			$post_artist = get_field('artist-band');
 			$post_tracklist = get_field('tracklisting');
 			$post_image = get_the_post_thumbnail_url($post_id, 'discog-thumbnail');
+			$post_video = get_field('video');
 			$post_content = get_the_content();
 
 ?>
@@ -74,7 +75,7 @@
 
 	} else {
 		echo '<div class="col">';
-		the_content();
+		echo wpautop($post_content);
 		echo '</div>';
 		echo '<div class="col">';
 		echo '	<img src="'.$post_image.'">';
@@ -82,13 +83,13 @@
 	}
 	echo '</div>';
 
+	if($post_video) {
+		echo '<h2>Video</h2>';
+		echo '<div class="video">';
+		echo $post_video;
+		echo '</div>';
+	}
 	
-
-
-
-
-
-
 	if(have_rows('links')) {
 		echo '<h2>Useful Links</h2>';
 		echo '<ul>';

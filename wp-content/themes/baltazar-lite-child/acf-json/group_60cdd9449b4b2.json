@@ -39,6 +39,22 @@
             "first_day": 1
         },
         {
+            "key": "field_60d88398b4f0b",
+            "label": "Video",
+            "name": "video",
+            "type": "oembed",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "width": "",
+            "height": ""
+        },
+        {
             "key": "field_60cdd9751fae7",
             "label": "Tracklisting",
             "name": "tracklisting",
@@ -173,5 +189,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1624796630
+    "modified": 1624802229
 }
