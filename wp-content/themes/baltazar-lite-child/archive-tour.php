@@ -2,6 +2,10 @@
 	get_header();
 ?>
 <style>
+	#breadcrumbs {
+		border-bottom: solid #292929;
+	}
+
 	.accordion {
 	}
 	.accordion dt, .accordion dd {
