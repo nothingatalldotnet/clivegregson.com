@@ -30,10 +30,10 @@
 	the_content();
 
 
-	if(have_rows('post_tracklist')) {
+	if(have_rows('tracklisting')) {
 		echo '<h2>Tracklisting</h2>';
 		echo '<ul>';
-		while(have_rows('links') ) {
+		while(have_rows('tracklisting') ) {
 			the_row();
 			$postition = get_sub_field('position');
 			$title = get_sub_field('title');
