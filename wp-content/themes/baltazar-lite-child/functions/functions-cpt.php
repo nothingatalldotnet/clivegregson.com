@@ -99,7 +99,7 @@
                     'editor',
                     'comments'
                 ),
-                'supports' => array('title', 'editor', 'author', 'thumbnail', 'custom-fields', 'excerpt')
+                'supports' => array('title', 'editor', 'author', 'custom-fields')
             )
         );
 

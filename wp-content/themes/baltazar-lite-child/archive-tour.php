@@ -35,11 +35,11 @@
 	}
 	 .accordion dd {
 		 border-top: 0;
-		 font-size: 12px;
 	}
 
 	.accordion dd span {
 		color: #ad6c60;
+		font-weight: bold;
 	}
 	
 	.accordion dd:last-of-type {
