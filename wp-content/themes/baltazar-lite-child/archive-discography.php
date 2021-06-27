@@ -3,6 +3,11 @@
 ?>
 
 <style>
+	#breadcrumbs {
+		border-bottom: solid #292929;
+		margin-bottom: 12px !important;
+	}
+	
 	.usercontent {
 		display: flex;
 		flex-wrap: wrap;

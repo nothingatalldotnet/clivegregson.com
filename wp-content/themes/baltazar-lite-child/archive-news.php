@@ -1,12 +1,15 @@
-
-
-
 <?php get_header();
- ?>
+?>
 
-<!-- main content start -->
+<style>
+	#breadcrumbs {
+		border-bottom: solid #292929;
+		margin-bottom: 12px !important;
+	}
+</style>
+
 <div class="mainwrap">
-	<!--rev slider-->
+
 
 	<?php $postmeta = get_post_custom(get_the_id()); 
 	if(!empty($postmeta["baltazar_sigle_option_revslider"][0]) && function_exists('putRevSlider')) { ?>

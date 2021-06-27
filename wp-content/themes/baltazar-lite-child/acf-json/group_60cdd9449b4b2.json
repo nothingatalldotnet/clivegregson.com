@@ -101,8 +101,8 @@
         },
         {
             "key": "field_60cdd9a01faea",
-            "label": "Where To Buy",
-            "name": "where_to_buy",
+            "label": "Links",
+            "name": "links",
             "type": "repeater",
             "instructions": "",
             "required": 0,
@@ -173,5 +173,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1624103671
+    "modified": 1624796630
 }
