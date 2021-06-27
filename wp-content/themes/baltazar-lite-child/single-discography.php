@@ -4,10 +4,10 @@
 		while (have_posts()) {
 			the_post(); 
 			$post_title = get_the_title();
-			$post_info = 
 			$post_release = get_field('release_date');
 			$post_artist = get_field('artist-band');
 			$post_tracklist = get_field('tracklisting');
+			$post_image = get_the_post_thumbnail_url($this_id, 'discog-thumbnail');
 ?>
 <style>
 	#breadcrumbs {
@@ -27,7 +27,10 @@
 	}
 
 	echo '<h1>'.$post_artist.' - '.$post_title.'</h1>';
+	echo '<img src="'.$post_image.'" style="float:right;">';
+	echo '<div style="float:left;">';
 	the_content();
+	echo '</div>';
 
 	if(have_rows('tracklisting')) {
 		echo '<h2>Tracklisting</h2>';
