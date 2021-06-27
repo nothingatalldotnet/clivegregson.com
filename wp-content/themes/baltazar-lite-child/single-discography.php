@@ -4,7 +4,7 @@
 		while (have_posts()) {
 			the_post(); 
 			$post_title = get_the_title();
-			$post_info = get_the_content();
+			$post_info = 
 			$post_release = get_field('release_date');
 			$post_artist = get_field('artist-band');
 			$post_tracklist = get_field('tracklisting');
@@ -27,7 +27,7 @@
 	}
 
 	echo '<h1>'.$post_artist.' - '.$post_title.'</h1>';
-	echo $post_info;
+	the_content();
 
 
 	if(have_rows('post_tracklist')) {
@@ -37,7 +37,7 @@
 			the_row();
 			$postition = get_sub_field('position');
 			$title = get_sub_field('title');
-
+			
 			echo '<li><span>'.$position.'</span> - '.$title.'<li>';
 		}
 		echo '</ul>';
@@ -51,7 +51,7 @@
 			$link = get_sub_field('link');
 			$title = get_sub_field('title');
 
-			echo '<li><span>'.$title.'</span> - <a href="'.$link.'" target="_blank" title="'.$title.'">'..'</a></li>';
+			echo '<li><span>'.$title.'</span> - <a href="'.$link.'" target="_blank" title="'.$title.'">'.$link.'</a></li>';
 		}
 		echo '</ul>';
 	}

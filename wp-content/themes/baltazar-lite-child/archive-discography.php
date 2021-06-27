@@ -7,7 +7,7 @@
 		border-bottom: solid #292929;
 		margin-bottom: 12px !important;
 	}
-	
+
 	.usercontent {
 		display: flex;
 		flex-wrap: wrap;
@@ -58,7 +58,7 @@
 			the_post();
 			$this_artist = get_field('artist-band');
 
-			if(!in_array($this_artist)) {
+			if(!in_array($this_artist, $group_array)) {
 				$group_array[] = $this_artist;
 			}
 		}
