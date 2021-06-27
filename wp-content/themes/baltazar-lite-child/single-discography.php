@@ -54,36 +54,37 @@
 
 	echo '<h1>'.$post_artist.' - '.$post_title.'</h1>';
 
-	echo '<div class="row">';
 	if(have_rows('tracklisting')) {
-		echo '<div class="col">';
-		echo '	<h2>Tracklisting</h2>';
-		echo '	<ul>';
+		echo '<div class="row">';
+		echo '	<div class="col">';
+		echo '		<h2>Tracklisting</h2>';
+		echo '		<ul>';
 		while(have_rows('tracklisting') ) {
 			the_row();
 			$position = get_sub_field('position');
 			$title = get_sub_field('title');
 			echo '<li><span>'.$position.'</span> - '.$title.'</li>';
 		}
-		echo '	</ul>';
-		echo '</div>';
-		echo '<div class="col">';
-		echo '	<img src="'.$post_image.'">';
+		echo '		</ul>';
+		echo '	</div>';
+		echo '	<div class="col">';
+		echo '		<img src="'.$post_image.'">';
+		echo '	</div>';
 		echo '</div>';
 
 		echo '<h2>Information</h2>';
 		echo wpautop($post_content);
 
 	} else {
-		echo '<div class="col">';
-		echo '<h2>Information</h2>';
+		echo '<div class="row">';
+		echo '	<div class="col">';
+		echo '		<h2>Information</h2>';
 		echo wpautop($post_content);
-		echo '</div>';
-		echo '<div class="col">';
-		echo '	<img src="'.$post_image.'">';
-		echo '</div>';
+		echo '	</div>';
+		echo '	<div class="col">';
+		echo '		<img src="'.$post_image.'">';
+		echo '	</div>';
 	}
-	echo '</div>';
 
 	if($post_video) {
 		echo '<h2>Video</h2>';
