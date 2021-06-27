@@ -71,10 +71,12 @@
 		echo '	<img src="'.$post_image.'">';
 		echo '</div>';
 
+		echo '<h2>Information</h2>';
 		echo wpautop($post_content);
 
 	} else {
 		echo '<div class="col">';
+		echo '<h2>Information</h2>';
 		echo wpautop($post_content);
 		echo '</div>';
 		echo '<div class="col">';
