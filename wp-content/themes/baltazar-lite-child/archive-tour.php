@@ -54,51 +54,64 @@
 ?>
 				<h1>Tour Dates</h1>
 
-				<h2>Current</h2>
 <?php
-	$date_now = date('Ymd');
-    $args = array(
-        'post_type' => 'tour',
-        'post_status' => 'publish',
-        'meta_key' => 'date',
-        'order' => 'ASC',
-		'orderby' => 'meta_value',
-		'meta_query' => array(array(
-			'key' => 'date',
-			'compare' => '>',
-			'value' => $date_now,
-		))
-	);
+	echo get_field('tour_dates_information','option');
 
-    $query = new WP_Query($args);
-	if($query->have_posts()) {
-		echo '<dl class="accordion">';
-		while($query->have_posts()) {
-			$query->the_post();
-			$date_title = get_the_title();
-			$date_date = get_field('date');
-			$date_time = get_field('date');
-			$date_tickets = get_field('date');
+
+
+	if(get_field('show_current_tour_dates','option')) {
+		echo '<h2>Current</h2>';
+
+		$date_now = date('Ymd');
+	    $args = array(
+	        'post_type' => 'tour',
+	        'post_status' => 'publish',
+	        'meta_key' => 'date',
+	        'order' => 'ASC',
+			'orderby' => 'meta_value',
+			'meta_query' => array(array(
+				'key' => 'date',
+				'compare' => '>',
+				'value' => $date_now,
+			))
+		);
+
+	    $query = new WP_Query($args);
+		if($query->have_posts()) {
+			echo '<dl class="accordion">';
+			while($query->have_posts()) {
+				$query->the_post();
+				$date_title = get_the_title();
+				$date_date = get_field('date');
+				$date_time = get_field('date');
+				$date_tickets = get_field('date');
 ?>
 			<dt>
 				<a href="">
 <?php
-	echo '<span>'.$date_date.'</span>';
-	echo $date_title;
+				echo '<span>'.$date_date.'</span>';
+				echo $date_title;
 ?>
 					
 				</a>
 			</dt>
 			<dd>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
 <?php
-		}
-		echo '</dl>';
-	} else {
+			}
+			echo '</dl>';
+		} else {
 
+		}
+	}
+
+
+
+
+
+	if(get_field('show_previous_tour_dates','option')) {
+		echo '<h2>Past</h2>';
 	}
 ?>
-
-				<h2>Past</h2>
 
 			</div>
 		</div>
