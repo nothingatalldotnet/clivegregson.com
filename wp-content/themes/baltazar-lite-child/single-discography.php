@@ -29,7 +29,6 @@
 	echo '<h1>'.$post_artist.' - '.$post_title.'</h1>';
 	the_content();
 
-
 	if(have_rows('tracklisting')) {
 		echo '<h2>Tracklisting</h2>';
 		echo '<ul>';
@@ -38,7 +37,7 @@
 			$postition = get_sub_field('position');
 			$title = get_sub_field('title');
 			
-			echo '<li><span>'.$position.'</span> - '.$title.'<li>';
+			echo '<li><span>'.$position.'</span> - '.$title.'</li>';
 		}
 		echo '</ul>';
 	}
