@@ -50,6 +50,8 @@
 				
 
 <?php
+	echo get_field('discography_information','option');
+
 
 	////////////
 	$group_array = array();

@@ -67,7 +67,7 @@
 			the_row();
 			$position = get_sub_field('position');
 			$title = get_sub_field('title');
-			echo '<li><span>'.$position.'</span> - '.$title.'</li>';
+			echo '<li><span>'.$position.'</span> '.$title.'</li>';
 		}
 		echo '		</ul>';
 		echo '	</div>';
