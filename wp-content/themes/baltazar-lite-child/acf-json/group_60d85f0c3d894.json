@@ -1,0 +1,73 @@
+{
+    "key": "group_60d85f0c3d894",
+    "title": "Tour Dates - Details",
+    "fields": [
+        {
+            "key": "field_60d85f14ffe1c",
+            "label": "Date",
+            "name": "date",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d\/m\/Y",
+            "return_format": "d\/m\/Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_60d85f26ffe1d",
+            "label": "Time",
+            "name": "time",
+            "type": "time_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "g:i a",
+            "return_format": "g:i a"
+        },
+        {
+            "key": "field_60d85f2fffe1e",
+            "label": "Tickets",
+            "name": "tickets",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "tour"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1624793123
+}

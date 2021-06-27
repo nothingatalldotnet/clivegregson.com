@@ -3,19 +3,34 @@
 ?>
 <style>
 	.accordion {
-		 margin: 50px;
 	}
 	 .accordion dt, .accordion dd {
 		 padding: 10px;
-		 border: 1px solid black;
+		 border: 1px solid #292929;
 		 border-bottom: 0;
 	}
-	 .accordion dt:last-of-type, .accordion dd:last-of-type {
-		 border-bottom: 1px solid black;
+
+	.accordion dt {
+		background: #292929;
+		border-top: 0px solid #292929;
+		border-bottom: 0px solid #292929;
 	}
-	 .accordion dt a, .accordion dd a {
+
+	.accordion dt:last-of-type, .accordion dd:last-of-type {
+		 border-bottom: 1px solid #292929;
+	}
+
+	.accordion dt a {
+		color: #ffffff;
+	}
+
+	.accordion dt a span {
+		color: #ad6c60;
+		margin-right: 50px;
+	}
+
+	.accordion dt a, .accordion dd a {
 		 display: block;
-		 color: black;
 		 font-weight: bold;
 	}
 	 .accordion dd {
@@ -30,8 +45,8 @@
 </style>
 <div class="mainwrap">
 	<div class="main clearfix">
-		<div class="content fullwidth">
-			<div class="posttext">
+		<div class="content singlepage">
+			<div class="posttext" style="float:none;">
 <?php
 	if(function_exists('yoast_breadcrumb')) {
 		yoast_breadcrumb('<p id="breadcrumbs" style="margin: 0 0;">','</p>');
@@ -40,16 +55,49 @@
 				<h1>Tour Dates</h1>
 
 				<h2>Current</h2>
-				<dl class="accordion">
-					<dt><a href="">Panel 1</a></dt>
-					<dd>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
+<?php
+	$date_now = date('Ymd');
+    $args = array(
+        'post_type' => 'tour',
+        'post_status' => 'publish',
+        'meta_key' => 'date',
+        'order' => 'ASC',
+		'orderby' => 'meta_value',
+		'meta_query' => array(array(
+			'key' => 'date',
+			'compare' => '>',
+			'value' => $date_now,
+		))
+	);
 
-					<dt><a href="">Panel 2</a></dt>
-					<dd>Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
+    $query = new WP_Query($args);
+	if($query->have_posts()) {
+		echo '<dl class="accordion">';
+		while($query->have_posts()) {
+			$query->the_post();
+			$date_title = get_the_title();
+			$date_date = get_field('date');
+			$date_time = get_field('date');
+			$date_tickets = get_field('date');
+?>
+			<dt>
+				<a href="">
+<?php
+	echo '<span>'.$date_date.'</span>';
+	echo $date_title;
+?>
 					
-					<dt><a href="">Panel 3</a></dt>
-					<dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
-				</dl>
+				</a>
+			</dt>
+			<dd>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
+<?php
+		}
+		echo '</dl>';
+	} else {
+
+	}
+?>
+
 				<h2>Past</h2>
 
 			</div>
@@ -58,16 +106,15 @@
 </div>
 <script>
 	(function($) {
-    
-  var allPanels = $('.accordion > dd').hide();
-    
-  $('.accordion > dt > a').click(function() {
-    allPanels.slideUp();
-    $(this).parent().next().slideDown();
-    return false;
-  });
+		var allPanels = $('.accordion > dd').hide();
 
-})(jQuery);
+		$('.accordion > dt > a').click(function() {
+			allPanels.slideUp();
+			$(this).parent().next().slideDown();
+			return false;
+		});
+
+	})(jQuery);
 </script>
 <?php
 	get_footer();

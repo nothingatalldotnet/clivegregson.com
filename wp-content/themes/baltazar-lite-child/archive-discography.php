@@ -35,7 +35,7 @@
 <div class="mainwrap">
 	<div class="main clearfix">
 		<div class="content singlepage">
-			<div class="posttext">
+			<div class="posttext" style="float:none;">
 <?php
 	if(function_exists('yoast_breadcrumb')) {
 		yoast_breadcrumb('<p id="breadcrumbs" style="margin: 0 0;">','</p>');
