@@ -40,6 +40,10 @@
 	ul {
 		list-style: none;
 	}
+
+	span {
+		color: #ad6c60;
+	}
 </style>
 
 
