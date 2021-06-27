@@ -29,7 +29,7 @@
 		margin-right: 50px;
 	}
 
-	.accordion dt a, .accordion dd a {
+	.accordion dt a {
 		 display: block;
 		 font-weight: bold;
 	}
