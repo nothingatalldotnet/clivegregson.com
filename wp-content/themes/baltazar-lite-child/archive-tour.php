@@ -102,10 +102,8 @@
 					echo '<span>Time </span>'.$date_time.'<br>';
 				}
 				if($date_tickets != "") {
-					echo '<span>Tickets </span><a href="'.$date_tickets.'" target="_blank">'.$date_tickets_title.'</a><br>';
+					echo '<span>Tickets </span><a href="'.$date_tickets.'" target="_blank" title="'.$date_tickets_title.'">'.$date_tickets.'</a><br>';
 				}
-
-				echo '<span>Details </span>';
 				the_content();
 
 				echo '</dd>';
