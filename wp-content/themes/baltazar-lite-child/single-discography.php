@@ -29,14 +29,31 @@
 	echo '<h1>'.$post_artist.' - '.$post_title.'</h1>';
 	echo $post_info;
 
+
+	if(have_rows('post_tracklist')) {
+		echo '<h2>Tracklisting</h2>';
+		echo '<ul>';
+		while(have_rows('links') ) {
+			the_row();
+			$postition = get_sub_field('position');
+			$title = get_sub_field('title');
+
+			echo '<li><span>'.$position.'</span> - '.$title.'<li>';
+		}
+		echo '</ul>';
+	}
+
 	if(have_rows('links')) {
+		echo '<h2>Useful Links</h2>';
+		echo '<ul>';
 		while(have_rows('links') ) {
 			the_row();
 			$link = get_sub_field('link');
 			$title = get_sub_field('title');
 
-			echo '<span>'.$title.'</span> - <a href="'.$link.'" target="_blank" title="'.$title.'">'..'</a><br>';
+			echo '<li><span>'.$title.'</span> - <a href="'.$link.'" target="_blank" title="'.$title.'">'..'</a></li>';
 		}
+		echo '</ul>';
 	}
 
 ?>
