@@ -9,6 +9,8 @@
 			$post_artist = get_field('artist-band');
 			$post_tracklist = get_field('tracklisting');
 			$post_image = get_the_post_thumbnail_url($post_id, 'discog-thumbnail');
+			$post_content = get_the_content();
+
 ?>
 <style>
 	#breadcrumbs {
@@ -68,7 +70,7 @@
 		echo '	<img src="'.$post_image.'">';
 		echo '</div>';
 
-		the_content();
+		echo wpautop($post_content);
 
 	} else {
 		echo '<div class="col">';
