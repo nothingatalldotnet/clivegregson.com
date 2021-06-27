@@ -4,7 +4,7 @@
 <style>
 	.accordion {
 	}
-	 .accordion dt, .accordion dd {
+	.accordion dt, .accordion dd {
 		 padding: 10px;
 		 border: 1px solid #292929;
 		 border-bottom: 0;
@@ -37,7 +37,12 @@
 		 border-top: 0;
 		 font-size: 12px;
 	}
-	 .accordion dd:last-of-type {
+
+	.accordion dd span {
+		color: #ad6c60;
+	}
+	
+	.accordion dd:last-of-type {
 		 border-top: 1px solid white;
 		 position: relative;
 		 top: -1px;
@@ -56,13 +61,12 @@
 
 <?php
 	echo get_field('tour_dates_information','option');
-
+	$date_now = date('Ymd');
 
 
 	if(get_field('show_current_tour_dates','option')) {
 		echo '<h2>Current</h2>';
 
-		$date_now = date('Ymd');
 	    $args = array(
 	        'post_type' => 'tour',
 	        'post_status' => 'publish',
@@ -83,20 +87,28 @@
 				$query->the_post();
 				$date_title = get_the_title();
 				$date_date = get_field('date');
-				$date_time = get_field('date');
-				$date_tickets = get_field('date');
-?>
-			<dt>
-				<a href="">
-<?php
+				$date_time = get_field('time');
+				$date_tickets = get_field('tickets_link');
+				$date_tickets_title = get_field('tickets_title');
+
+				echo '<dt><a href="">';
 				echo '<span>'.$date_date.'</span>';
 				echo $date_title;
-?>
-					
-				</a>
-			</dt>
-			<dd>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
-<?php
+				echo '</a></dt>';
+
+				echo '<dd>';
+				if($date_time) {
+					echo '<span>Date </span>'.$date_date.'<br>';
+					echo '<span>Time </span>'.$date_time.'<br>';
+				}
+				if($date_tickets != "") {
+					echo '<span>Tickets </span><a href="'.$date_tickets.'" target="_blank">'.$date_tickets_title.'</a><br>';
+				}
+
+				echo '<span>Details </span>';
+				the_content();
+
+				echo '</dd>';
 			}
 			echo '</dl>';
 		} else {
@@ -110,8 +122,6 @@
 
 	if(get_field('show_previous_tour_dates','option')) {
 		echo '<h2>Past</h2>';
-
-		$date_now = date('Ymd');
 	    $args = array(
 	        'post_type' => 'tour',
 	        'post_status' => 'publish',

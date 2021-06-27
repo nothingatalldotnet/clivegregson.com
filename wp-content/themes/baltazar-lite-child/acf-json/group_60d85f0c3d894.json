@@ -11,7 +11,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -28,7 +28,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -37,19 +37,38 @@
         },
         {
             "key": "field_60d85f2fffe1e",
-            "label": "Tickets",
-            "name": "tickets",
+            "label": "Tickets Link",
+            "name": "tickets_link",
             "type": "url",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
             "placeholder": ""
+        },
+        {
+            "key": "field_60d868cd9c9a7",
+            "label": "Tickets Title",
+            "name": "tickets_title",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -69,5 +88,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1624793123
+    "modified": 1624795371
 }
