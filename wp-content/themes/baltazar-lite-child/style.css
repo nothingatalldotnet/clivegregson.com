@@ -16,12 +16,6 @@ body {
 	font-family: chupada, sans-serif !important;
 }
 
-.pagenav {
-    background: #A4743C;
-    border-top: 0px solid #000;
-    border-bottom: 0px solid #000;
-}
-
 #breadcrumbs {
 	border-bottom: solid #292929;
 	margin-bottom: 12px !important;
