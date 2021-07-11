@@ -21,3 +21,8 @@ body {
     border-top: 0px solid #000;
     border-bottom: 0px solid #000;
 }
+
+#breadcrumbs {
+	border-bottom: solid #292929;
+	margin-bottom: 12px !important;
+}

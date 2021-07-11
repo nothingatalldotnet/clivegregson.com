@@ -14,11 +14,6 @@
 
 ?>
 <style>
-	#breadcrumbs {
-		border-bottom: solid #292929;
-		margin-bottom: 12px !important;
-	}
-
 	.row {
 		display: flex;
 		flex-direction: row;
