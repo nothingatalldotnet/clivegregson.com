@@ -87,8 +87,8 @@
 	<article class="card">
 		<?php echo $this_image; ?>
 		<div class="text">
-			<h3><?php echo $this_artist; ?></h3>
-			<h4><?php echo $this_title; ?></h4>
+			<h3><?php echo $this_title; ?></h3>
+<!--			<h4><?php echo $this_title; ?></h4> -->
 			<a href="<?php echo $this_permalink; ?>">More Info</a>
 		</div>
 	</article>
