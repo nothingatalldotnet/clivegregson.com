@@ -7,7 +7,14 @@ Author URI: https://nothingatall.net;
 Template: baltazar-lite
 */
 
+@font-face {
+  font-family: chupada;
+  src: url('assets/fonts/chupada.ott');
+}
 
+body {
+	font-family: chupada, sans-serif !important;
+}
 
 .pagenav {
     background: #A4743C;
