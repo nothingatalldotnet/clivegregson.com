@@ -1,4 +1,5 @@
 <?php
+	include_once('functions/functions-scripts.php');
 	include_once('functions/functions-cpt.php');
 	include_once('functions/functions-comments.php');
 	include_once('functions/functions-admin.php');
