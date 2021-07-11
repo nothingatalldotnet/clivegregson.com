@@ -15,7 +15,6 @@
     add_action('wp_dashboard_setup', 'remove_draft_widget', 999);
 
     function add_post_types() {
-
         register_post_type('discography', array(
                 'labels' => array(
                     'name' => __('Discography'),
@@ -76,3 +75,13 @@
 
     }
     add_action('init', 'add_post_types');
+
+
+    function show_all_discogs($query) {
+        if (!is_admin() && $query->is_main_query()) {
+            if(is_post_type_archive('discography')) {
+                $query->set('posts_per_page', -1);
+            }
+        }
+    }
+    add_action('pre_get_posts', 'show_all_discogs');
