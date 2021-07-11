@@ -66,7 +66,7 @@
 
 	for($i=0; $i < count($group_array); $i++) {
 		$args = array(
-			'numberposts' => -1,
+			'posts_per_page' => -1,
 			'post_type' => 'discography',
 			'meta_key' => 'artist-band',
 			'meta_value' => $group_array[$i]
