@@ -16,6 +16,11 @@ body {
 	font-family: chupada, sans-serif !important;
 }
 
+#logo {
+	font-family: chupada, sans-serif !important;	
+	font-weight: bold;
+}
+
 #breadcrumbs {
 	border-bottom: solid #292929;
 	margin-bottom: 12px !important;
