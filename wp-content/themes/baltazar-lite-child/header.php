@@ -100,9 +100,10 @@
 							<?php } ?>
 							</div>
 							<!-- logo -->
-							<?php if(baltazar_data('logo_position') == 1 ){ 
-								baltazar_logo();
-							} ?>
+							<div class="logo-inner">
+								<div id="logo" class="">
+									<a href="https://cg.nothingatall.net/">Clive Gregson</a>
+								</div>	
 							</div>
 							<!-- main menu -->
 							<div class="pagenav <?php if( baltazar_data('logo_position') == 3  ){ echo 'logo-left-menu'; } ?>"> 	
