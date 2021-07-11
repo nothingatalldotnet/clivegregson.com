@@ -12,17 +12,23 @@ Template: baltazar-lite
   src: url('assets/fonts/chupada.otf');
 }
 
-body {
+h1 {
+	font-weight: bold;
+	font-size: 44px;
+    text-transform: uppercase;
 }
 
 #logo a {
 	font-family: chupada, sans-serif !important;	
 	font-weight: bold;
-	font-size: 42px;
+	font-size: 82px;
+    text-transform: uppercase;
 }
 
 #breadcrumbs {
 	font-family: chupada, sans-serif !important;	
 	border-bottom: solid #292929;
 	margin-bottom: 12px !important;
+	text-transform: uppercase;
+    font-size: 24px;
 }
