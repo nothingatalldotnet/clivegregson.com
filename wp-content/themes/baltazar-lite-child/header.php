@@ -100,7 +100,9 @@
 							<?php } ?>
 							</div>
 							<!-- logo -->
-							<h1 id="logo">Clive Gregson</h1>
+							<?php if(baltazar_data('logo_position') == 1 ){ 
+								baltazar_logo();
+							} ?>
 							</div>
 							<!-- main menu -->
 							<div class="pagenav <?php if( baltazar_data('logo_position') == 3  ){ echo 'logo-left-menu'; } ?>"> 	
