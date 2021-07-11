@@ -23,7 +23,7 @@
                 'public' => true,
                 'has_archive' => true,
                 'rewrite' => array('slug' => 'discography'),
-                'hierarchical' => false,
+                'hierarchical' => true,
                 'show_ui' => true,
                 'show_in_menu' => true,
                 'show_in_nav_menus' => true,
